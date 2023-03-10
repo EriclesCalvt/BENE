@@ -14,24 +14,24 @@
 </head>
 <body>
     <div class="all">
-       <a href="/Codes/Form-Bene/src/Inicio/home.html"><img src="/Codes/Form-Bene/assets/SETA.png" alt=""></a>
+       <a href="/Codes/Form-Bene/src/Inicio/home.html"><img src="/Codes/Form-Bene/assets/SETA.png" alt="" id="imgAll"></a>
         <div class="text">
             <h1>ADICIONE OS DADOS</h1>
         </div>
         <div class="form">
-            <form>
+            <form method="POST" action="https://33c4-200-36-135-255.sa.ngrok.io/pages/criar">
                 <label>TIPO</label><br>
-                <input type="text"><br>
+                <input type="text" name="TIPO"><br>
                 <label>MARCA</label><br>
-                <input type="text"><br>
+                <input type="text" name="MARCA"><br>
                 <label>PESO</label><br>
-                <input type="text"><br>
+                <input type="text" name="PESO"><br>
                 <label>CLASSIFICAÇÃO</label><br>
-                <input type="text"><br>
+                <input type="text" name="CLASSIFICAÇÃO"><br>
                 <label>ESTADO</label><br>
-                <input type="text"><br>
+                <input type="text" name="ESTADO"><br>
                 <label>PREÇO</label><br>
-                <input type="text"><br>
+                <input type="text" name="PREÇO"><br>
                 <label>SELECIONE O MERCADO</label><br>
                 <select>
                     <option value="">NENHUM</option>
@@ -41,7 +41,7 @@
                 </select><br>
                 <br>
                 <div id="img">
-                    <label for="file">ENVIE AQUI A IMAGEM DO PRODUTO</label>
+                    <label for="file" id="labelfile"><span>ESCOLHA UMA IMAGEM</span></label>
                     <input type="file" id="file">
                 </div><br>
                 <center>
@@ -50,5 +50,6 @@
             </form>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
-</html>
+</html> 

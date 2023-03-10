@@ -22,11 +22,11 @@
     justify-content: center;
     align-items: center;
     color: white;
-
+    gap: 5px;
 }
 .form label{
     font-family: 'Noto Serif Ahom', sans-serif;
-    position: absolute;
+   
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
@@ -53,19 +53,23 @@ h1{
 .form input[type="file"]{
     display: none;
 }
+
 #img{
-    background-color: white;
-    padding: 50px;
-    height: 4vh;
-    width: 70vw;
+    height: 140px;
 }
 #img label{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
     color: gray;
-    height: 10vh;
+    height: 100%;
     background-color: white;
+    padding: 10px;
+    border-radius: 4px;
 }
 .form button{
+    margin-top: 20px;
     height: 10vh;
     width: 70vw;
     background-color: #419F57;
@@ -75,9 +79,15 @@ h1{
     font-weight: bold;
     font-size: 25px;
 }
-img{
+
+.all a img{
     top: 10px;
     left: 10px;
-    position: absolute;
+    /* position: absolute; */
     width: 10vw;
+}
+
+.picture{
+    object-fit: cover;
+    height: 100%;
 }

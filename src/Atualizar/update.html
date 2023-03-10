@@ -19,19 +19,19 @@
             <h1>ATUALIZE OS DADOS</h1>
         </div>
         <div class="form">
-            <form>
+            <form method="POST" action="https://33c4-200-36-135-255.sa.ngrok.io/pages/atualizar">
                 <label>TIPO</label><br>
-                <input type="text"><br>
+                <input type="text" name="tipo"><br>
                 <label>MARCA</label><br>
-                <input type="text"><br>
+                <input type="text" name="marca"><br>
                 <label>PESO</label><br>
-                <input type="text"><br>
+                <input type="text" name="peso"><br>
                 <label>CLASSIFICAÇÃO</label><br>
-                <input type="text"><br>
+                <input type="text" name="classificação"><br>
                 <label>ESTADO</label><br>
-                <input type="text"><br>
+                <input type="text" name="estado"><br>
                 <label>PREÇO</label><br>
-                <input type="text"><br>
+                <input type="text" name="preço"><br>
                 <label>SELECIONE O MERCADO</label><br>
                 <select>
                     <option value="">NENHUM</option>
@@ -41,8 +41,8 @@
                 </select><br>
                 <br>
                 <div id="img">
-                    <label for="file">ENVIE AQUI A IMAGEM DO PRODUTO</label>
-                    <input type="file" id="file">
+                    <label for="file"><span>ESCOLHA UM PRODUTO</span></label>
+                    <input type="file" id="file" name="file">
                 </div><br>
                 <center>
                     <button>ATUALIZAR</button>
@@ -50,5 +50,7 @@
             </form>
         </div>
     </div>
+
+   <script src="script.js"></script>
 </body>
 </html>
